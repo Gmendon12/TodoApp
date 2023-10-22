@@ -5,9 +5,129 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(1, 1, 49);
+  padding-top: 20px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  padding: 10px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+div {
+  color: white;
+}
+
+.todo-item{
+  text-align: justify;
+  display: grid;
+  grid-template-columns: 25vw 25vw 25vw;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.todo-text{
+  font-size: 15px;
+}
+
+.todo-contents{
+  background-color: rgb(1, 1, 36);
+  padding: 10px;
+  border-radius: 5px;
+  height: 70px;
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.todo-contents-update{
+  background-color: rgb(1, 1, 36);
+  padding: 10px;
+  border-radius: 5px;
+  height: 70px;
+  width: 25vw;
+}
+
+.todo-btns{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+li{
+  list-style-type: none;
+}
+
+input {
+  height: 30px;
+  background-color: transparent;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: white;
+  padding-left: 5px;
+}
+
+.input-btn{
+  height: 33px;
+  width: 80px;
+  background-color: transparent;
+  color: white;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  border-left: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.input-btn:hover{
+  background-color: rgb(1, 1, 75);
+  cursor: pointer;
+}
+
+.nothing-to-do{
+  font-size: 15px;
+  padding-top: 40px;
+}
+
+.mark-btn{
+  background-color: transparent;
+  border-color: transparent;
+  color: white;
+  font-size: 10px;
+}
+
+.edit-btn{
+  background-color: transparent;
+  border-color: transparent;
+  color: white;
+  font-size: 10px;
+}
+
+.delete-btn{
+  background-color: transparent;
+  border-color: transparent;
+  color: red;
+  font-size: 10px;
+}
+
+.update-btn{
+  height: 34px;
+  width: 80px;
+  background-color: transparent;
+  color: white;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  border-left: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
